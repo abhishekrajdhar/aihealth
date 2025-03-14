@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify, request
 from src.helper import download_hugging_face_embeddings
-from langchain_community.vectorstores import Pinecone  # ✅ Corrected Pinecone import
+from langchain_community.vectorstores import Pinecone  # ✅ Corrected import
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 from langchain_google_genai import GoogleGenerativeAI
 from src.prompt import *
 import os
-from pinecone import Pinecone  # ✅ Ensure you are using `pinecone-client`
-from langchain.vectorstores import Pinecone
+from pinecone import Pinecone  # ✅ Correct Pinecone import
+
 
 
 app = Flask(__name__)
