@@ -10,3 +10,5 @@ langchain_openai
 langchain_google_genai
 langchain_experimental
 -e .
+flask
+gunicorn
