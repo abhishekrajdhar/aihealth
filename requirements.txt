@@ -3,9 +3,11 @@ langchain
 flask
 pypdf
 python-dotenv
-pinecone-client  
+pinecone-client  # ✅ Keep only this, remove `pinecone[grpc]`
 langchain_community
+langchain_openai
 langchain_google_genai
 langchain_experimental
+flask
 gunicorn
 -e .
