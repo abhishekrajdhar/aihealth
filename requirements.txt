@@ -3,12 +3,9 @@ langchain
 flask
 pypdf
 python-dotenv
-pinecone[grpc]
-langchain-pinecone
+pinecone-client  
 langchain_community
-langchain_openai
 langchain_google_genai
 langchain_experimental
--e .
-flask
 gunicorn
+-e .
